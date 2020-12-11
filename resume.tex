@@ -4,12 +4,11 @@
 \usepackage{tgpagella}
 \usepackage{geometry}
 \usepackage{xcolor}
+\usepackage{tcolorbox}
 
 \setlength\parindent{0pt}
-\geometry{left=1.2cm, top=1.5cm, right=1.8cm, bottom=2.0cm, footskip=.5cm}
+\geometry{left=1.2cm, top=1.0cm, right=1.8cm, bottom=1.5cm, footskip=0.5cm}
 
-\usepackage{tcolorbox}
-\usepackage{mdframed}
 
 \RequirePackage{titlesec}
 % \LoadClass{article}
@@ -20,7 +19,7 @@
 
 \titleformat{\section}			    % command
 	% {\Large\raggedright}  	% set large, small cap, left align
-	{\Large\scshape\raggedright}  	% set large, small cap, left align
+	{\Huge\scshape\raggedright\vspace{-7pt}}  	% set large, small cap, left align
 	{}								% label
 	{0em}							% horiz sep between label & title body
 	{}								% before
@@ -45,10 +44,17 @@
 	\begin{tcolorbox}[sharp corners, colback=white, colframe=blue!80!yellow, width=0.55\linewidth, center]
 	\centerline{\Huge{\uppercase{#1} \color{blue!80!yellow}\bf\uppercase{#2}}}
 	\end{tcolorbox} 
-	\vspace{2em}
+	\vspace{4em}
 }
 
-
+\newcommand{\info}[5]{%
+	\begin{tcolorbox}[sharp corners, height=0.12\linewidth, colframe=white, width=1.2\textwidth, center]
+	\vspace{2.5em}
+	\centerline{\color{black}{#1} \textbullet \ \color{blue!80!yellow}{#2} \color{black}\textbullet \ {#3}}
+	\centerline{\color{blue!80!yellow}{#4} \color{black}\textbullet \ \color{blue!80!yellow}{#5}}
+	\end{tcolorbox} 
+	\vspace{-8em}
+}
 
 \newcommand{\workitems}[3]{%
     \begin{itemize}
@@ -59,10 +65,10 @@
 }
 
 \newcommand{\school}[4]{%
-	{\bf#1}\\
+	{\bf\color{red!70!blue}#1}\\
 	#2\\
 	#3\\
-	#4\\
+	{\color{blue!80!yellow}#4}\\
 	\\
 }
 
@@ -76,6 +82,7 @@
 
 
 \begin{document}
+	\info{***REMOVED***}{***REMOVED***}{***REMOVED***}{linkedin.com/***REMOVED***}{github.com/karlnr}
 	\name{Karl}{Northrup}
 	%
 	% LEFT COLUMN
@@ -99,7 +106,7 @@
 	% MIDDLE COLUMN
 	%
 	\begin{minipage}[t]{0.10\textwidth}
-		\centering\vspace{-15pt}\color{blue!80}\rule{2pt}{620pt}
+		\centering\vspace{-5pt}\color{blue!80}\rule{2pt}{645pt}
 	\end{minipage}\hfill
 	%
 	% RIGHT COLUMN
