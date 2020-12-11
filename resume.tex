@@ -1,0 +1,117 @@
+% \documentclass[2020/12/10 custom cv class]{cv}
+\documentclass[]{article}
+
+\usepackage{tgpagella}
+\usepackage{geometry}
+\usepackage{xcolor}
+
+\setlength\parindent{0pt}
+\geometry{left=1.2cm, top=1.5cm, right=1.8cm, bottom=2.0cm, footskip=.5cm}
+
+\usepackage{tcolorbox}
+\usepackage{mdframed}
+
+\RequirePackage{titlesec}
+% \LoadClass{article}
+
+% \titleformat
+	% {command}  % part, chapter, section, subsection, subsubsection, paragraph, subparagraph
+	% [shape] {format} {label} {sep} {before}[after]
+
+\titleformat{\section}			    % command
+	% {\Large\raggedright}  	% set large, small cap, left align
+	{\Large\scshape\raggedright}  	% set large, small cap, left align
+	{}								% label
+	{0em}							% horiz sep between label & title body
+	{}								% before
+	% [\titlerule]					% after
+	% [\titlerule\vspace{0.3em}]	% after
+
+
+\titleformat{\subsection}
+	{\bf\raggedright\vspace{-7pt}}  				% set large, small cap, left align
+	{}{0em}
+	{}
+
+
+\newcommand{\datedsubsection}[3]{
+  \makebox[0pt][l]{#1}%
+  \makebox[\textwidth][c]{#2}%
+  \makebox[0pt][r]{#3}%
+}
+
+
+\newcommand{\name}[2]{%
+	\begin{tcolorbox}[sharp corners, colback=white, colframe=blue!80!yellow, width=0.55\linewidth, center]
+	\centerline{\Huge{\uppercase{#1} \color{blue!80!yellow}\bf\uppercase{#2}}}
+	\end{tcolorbox} 
+	\vspace{2em}
+}
+
+
+
+\newcommand{\workitems}[3]{%
+    \begin{itemize}
+    \item #1
+    \item #2
+    \item #3
+    \end{itemize}
+}
+
+\newcommand{\school}[4]{%
+	{\bf#1}\\
+	#2\\
+	#3\\
+	#4\\
+	\\
+}
+
+\newcommand{\courses}[3]{%
+	\vspace{-5pt}
+	#1\\
+	#2\\
+	#3\\
+}
+
+
+
+\begin{document}
+	\name{Karl}{Northrup}
+	%
+	% LEFT COLUMN
+	%
+	\par\begin{minipage}[t]{0.30\textwidth}
+		\section{Education}
+			\school{Master of Science}{Computer Science}{Georgia Institute of Technology}{2019-Present}
+			\school{Graduate Foundations\\M.S. Certificate}{Computer Science}{Kennesaw University}{4.0 GPA | 2000-2020}
+			\school{Bachelor of Science}{Chemical Engineering}{Texas A\&M University}{summa cum laude | 2000-2020}
+		\section{Experience}
+			\school{Project \& Process Engineer}{Audubon Engineering}{***REMOVED***}{2000-Present}
+			\school{Process Engineer}{WS Nelson}{***REMOVED***}{2000-2020}
+			\school{Technology Consultant}{OTM Technology}{***REMOVED***}{2019-Present}
+		\section{Graduate\\Coursework}
+		\subsection{GaTech}
+			\courses{Artificial Intelligence}{Software Development Processes}{Machine Learning for Trading}
+		\subsection{KSU}
+			\courses{Datastructures \& Algorithms}{Programming Foundations}{Mathematical Structures}
+	\end{minipage}%
+	%
+	% MIDDLE COLUMN
+	%
+	\begin{minipage}[t]{0.10\textwidth}
+		\centering\vspace{-15pt}\color{blue!80}\rule{2pt}{620pt}
+	\end{minipage}\hfill
+	%
+	% RIGHT COLUMN
+	%
+	\begin{minipage}[t]{0.60\textwidth}
+		\section{Professional Projects}
+			\datedsubsection{Project such and such}{Python}{2000}
+			\workitems{did some stuff}{did more stuff}{more stuff to do}
+		\section{Academic Projects}
+			\datedsubsection{Project such and such}{Python}{2000}
+			\workitems{did some stuff}{did more stuff}{more stuff to do}
+		\section{Personal Projects}
+			\subsection{subsection}
+	\end{minipage}\par%
+\end{document}
