@@ -1,5 +1,5 @@
 % \documentclass[2020/12/10 custom cv class]{cv}
-\documentclass[]{article}
+\documentclass[10pt]{article}
 
 \usepackage{tgpagella}
 \usepackage{geometry}
@@ -7,7 +7,7 @@
 \usepackage{tcolorbox}
 
 \setlength\parindent{0pt}
-\geometry{left=1.2cm, top=1.0cm, right=1.8cm, bottom=1.5cm, footskip=0.5cm}
+\geometry{left=1.2cm, top=1.2cm, right=1.8cm, bottom=1.5cm, footskip=0.5cm}
 
 
 \RequirePackage{titlesec}
@@ -17,9 +17,27 @@
 	% {command}  % part, chapter, section, subsection, subsubsection, paragraph, subparagraph
 	% [shape] {format} {label} {sep} {before}[after]
 
+% normalsize, large, Large, LARGE, huge, Huge
+% 11, 12, 14, 17, 20, 25
+
+% \titleformat{\section}			    % command
+% 	{\huge\scshape\flushleft\vspace{-28pt}}  	% set large, small cap, left align
+% 	{}								% label
+% 	{0em}							% horiz sep between label & title body
+% 	{}								% before
+% 	% [\titlerule]					% after
+% 	% [\titlerule\vspace{0.3em}]	% after
+
 \titleformat{\section}			    % command
-	% {\Large\raggedright}  	% set large, small cap, left align
-	{\Huge\scshape\raggedright\vspace{-7pt}}  	% set large, small cap, left align
+	{\huge\scshape\flushright\vspace{-9pt}}  	% set large, small cap, left align
+	{}								% label
+	{0em}							% horiz sep between label & title body
+	{}								% before
+	% [\titlerule]					% after
+	[\titlerule\vspace{0.0pt}]	% after
+
+\titleformat{\subsection}			    % command
+	{\large\scshape\flushright\vspace{0pt}}  	% set large, small cap, left align
 	{}								% label
 	{0em}							% horiz sep between label & title body
 	{}								% before
@@ -27,16 +45,20 @@
 	% [\titlerule\vspace{0.3em}]	% after
 
 
-\titleformat{\subsection}
-	{\bf\raggedright\vspace{-7pt}}  				% set large, small cap, left align
-	{}{0em}
-	{}
+\titleformat{\subsubsection}			    % command
+	% {\Large\raggedright}  	% set large, small cap, left align
+	{\Large\scshape\vspace{-4pt}}  	% set large, small cap, left align
+	{}								% label
+	{0em}							% horiz sep between label & title body
+	{}								% before
+	% [\titlerule]					% after
+	% [\titlerule\vspace{0.3em}]	% after
 
 
 \newcommand{\datedsubsection}[3]{
-  \makebox[0pt][l]{#1}%
-  \makebox[\textwidth][c]{#2}%
-  \makebox[0pt][r]{#3}%
+  \makebox[0pt][l]{\bf#1}%
+  \makebox[\textwidth][c]{\bf#2}%
+  \makebox[0pt][r]{\bf#3}%
 }
 
 
@@ -49,6 +71,7 @@
 
 \newcommand{\info}[5]{%
 	\begin{tcolorbox}[sharp corners, height=0.12\linewidth, colframe=white, width=1.2\textwidth, center]
+	% \begin{lift}[sharp corners, height=0.12\linewidth, colframe=white, width=1.2\textwidth, center]
 	\vspace{2.5em}
 	\centerline{\color{black}{#1} \textbullet \ \color{blue!80!yellow}{#2} \color{black}\textbullet \ {#3}}
 	\centerline{\color{blue!80!yellow}{#4} \color{black}\textbullet \ \color{blue!80!yellow}{#5}}
@@ -64,12 +87,19 @@
     \end{itemize}
 }
 
+\newcommand{\workitemstwo}[2]{%
+    \begin{itemize}
+    \item #1
+    \item #2
+    \end{itemize}
+}
+
 \newcommand{\school}[4]{%
-	{\bf\color{red!70!blue}#1}\\
+	{\bf\color{red!65!blue!90}#1}\\
 	#2\\
 	#3\\
 	{\color{blue!80!yellow}#4}\\
-	\\
+	\vspace{5pt}
 }
 
 \newcommand{\courses}[3]{%
@@ -79,6 +109,22 @@
 	#3\\
 }
 
+\newcommand{\summary}[2]{%
+	{\huge\centering\scshape\vspace{-5pt}#1}
+	\vspace{7.0pt}
+	\hline
+	\vspace{7.0pt}
+	{#2}
+	\vspace{14.0pt}
+	% \titlerule\vspace{0.0pt}
+}
+
+\newcommand{\headingright}[1]{%
+	{\huge\scshape\flushleft\vspace{-5pt}#1}
+	\vspace{7.0pt}
+	\hline
+	% \titlerule\vspace{0.0pt}
+}
 
 
 \begin{document}
@@ -87,10 +133,12 @@
 	%
 	% LEFT COLUMN
 	%
-	\par\begin{minipage}[t]{0.30\textwidth}
+	% \par
+	\begin{minipage}[t]{0.30\textwidth}
+	\begin{flushright}
 		\section{Education}
 			\school{Master of Science}{Computer Science}{Georgia Institute of Technology}{2019-Present}
-			\school{Graduate Foundations\\M.S. Certificate}{Computer Science}{Kennesaw University}{4.0 GPA | 2000-2020}
+			\school{Graduate Foundations\\M.S. Certificate}{Computer Science}{Kennesaw State University}{4.0 GPA | 2000-2020}
 			\school{Bachelor of Science}{Chemical Engineering}{Texas A\&M University}{summa cum laude | 2000-2020}
 		\section{Experience}
 			\school{Project \& Process Engineer}{Audubon Engineering}{***REMOVED***}{2000-Present}
@@ -101,6 +149,7 @@
 			\courses{Artificial Intelligence}{Software Development Processes}{Machine Learning for Trading}
 		\subsection{KSU}
 			\courses{Datastructures \& Algorithms}{Programming Foundations}{Mathematical Structures}
+	\end{flushright}%
 	\end{minipage}%
 	%
 	% MIDDLE COLUMN
@@ -111,14 +160,28 @@
 	%
 	% RIGHT COLUMN
 	%
-	\begin{minipage}[t]{0.60\textwidth}
-		\section{Professional Projects}
-			\datedsubsection{Project such and such}{Python}{2000}
-			\workitems{did some stuff}{did more stuff}{more stuff to do}
-		\section{Academic Projects}
-			\datedsubsection{Project such and such}{Python}{2000}
-			\workitems{did some stuff}{did more stuff}{more stuff to do}
-		\section{Personal Projects}
-			\subsection{subsection}
-	\end{minipage}\par%
+	\begin{minipage}[t]{0.60\textwidth}%
+		\summary{Summary}{TODO - update formatting, temp filler text/projects/details below}
+		\headingright{Projects}
+		\subsubsection{Chemical Engineering Projects}
+		\datedsubsection{Ethylene Facility Expansion}{}{HYSYS}
+		\workitems{Led Process Engineering effort to debottleneck and expand major ethylene terminal}{Responsible for design, optimization, and sizing of capital assets}{Primary engineer from front-end engineering design phase to Issue for Construction}
+		\subsubsection{Academic}
+		\datedsubsection{ML Stock Trader}{}{Python, Pandas}
+		\workitems
+		{Built a market similator to process pricing data, orders, and produce portfolio metrics}
+		{Researched stock indicators and tested with manual logic strategy to establish a baseline}
+		{Used machine learning techniques to develope a strategy learner using Random Forest \& Bag Learners}
+		\datedsubsection{JobRank Android App}{}{Java, SQLite}
+		\workitemstwo{Worked with a team to develop UML, Design \& Description documents per Project Specification}{Developed job tracking application to rank various job offers for comparison}
+		\datedsubsection{TextModifier Utility \& Library}{}{Java, jUnit}
+		\workitemstwo{Used Test Specification Language to develop jUnit tests to provide sufficient coverage}{Wrote a command line utility and java library allowing the user to modify text based on several option and arguments}
+		\datedsubsection{Mars Glider}{}{Python, Numpy}
+		\workitemstwo{Markov AI algorithms to allow Glider craft to navigate randomly generated fields of obstacles}{Developed SLAM algorithm to solve warehouse problems to optimize paths for highest reward}
+		\subsubsection{Freelance}
+		\datedsubsection{Inspection Tracking DB}{}{Access/SQL}
+		\datedsubsection{Pipe Inventory Tool}{}{MS Access, SQL}
+		% \workitems{did some stuff}{did more stuff}{more stuff to do}
+	\end{minipage}
+	% \par
 \end{document}
