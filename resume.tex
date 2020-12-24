@@ -1,187 +1,93 @@
 % \documentclass[2020/12/10 custom cv class]{cv}
-\documentclass[10pt]{article}
-
-\usepackage{tgpagella}
+\documentclass[10pt, letterpaper]{article}
+\usepackage{fontspec}
+\usepackage{fontawesome5}  % for glyph style icons
+\setmainfont{Corbel}
+% \usepackage{tgpagella}
 \usepackage{geometry}
-\usepackage{xcolor}
-\usepackage{tcolorbox}
-
-\setlength\parindent{0pt}
-\geometry{left=1.2cm, top=1.2cm, right=1.8cm, bottom=1.5cm, footskip=0.5cm}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[many]{tcolorbox}
+\usepackage{setspace}
+\usepackage{ragged2e}
 
 
 \RequirePackage{titlesec}
-% \LoadClass{article}
+\setlength\parindent{0pt}
+\geometry{left=1.2cm, top=1.3cm, right=1.8cm, bottom=0cm, footskip=0.7cm}
+% \LoadClass{article}  % for using .cls file
 
-% \titleformat
-	% {command}  % part, chapter, section, subsection, subsubsection, paragraph, subparagraph
-	% [shape] {format} {label} {sep} {before}[after]
-
-% normalsize, large, Large, LARGE, huge, Huge
-% 11, 12, 14, 17, 20, 25
-
-% \titleformat{\section}			    % command
-% 	{\huge\scshape\flushleft\vspace{-28pt}}  	% set large, small cap, left align
-% 	{}								% label
-% 	{0em}							% horiz sep between label & title body
-% 	{}								% before
-% 	% [\titlerule]					% after
-% 	% [\titlerule\vspace{0.3em}]	% after
-
-\titleformat{\section}			    % command
-	{\huge\scshape\flushright\vspace{-9pt}}  	% set large, small cap, left align
-	{}								% label
-	{0em}							% horiz sep between label & title body
-	{}								% before
-	% [\titlerule]					% after
-	[\titlerule\vspace{0.0pt}]	% after
-
-\titleformat{\subsection}			    % command
-	{\large\scshape\flushright\vspace{0pt}}  	% set large, small cap, left align
-	{}								% label
-	{0em}							% horiz sep between label & title body
-	{}								% before
-	% [\titlerule]					% after
-	% [\titlerule\vspace{0.3em}]	% after
+% left, before, after
+\titlespacing\section{0em}{1.5em}{0.5em}
+\titlespacing\subsection{0pt}{0em}{0.5em}
 
 
-\titleformat{\subsubsection}			    % command
-	% {\Large\raggedright}  	% set large, small cap, left align
-	{\Large\scshape\vspace{-4pt}}  	% set large, small cap, left align
-	{}								% label
-	{0em}							% horiz sep between label & title body
-	{}								% before
-	% [\titlerule]					% after
-	% [\titlerule\vspace{0.3em}]	% after
+\definecolor{azure}{rgb}{0.0, 0.5, 1.0}
+\definecolor{afblue}{rgb}{0.36, 0.54, 0.66}
+\definecolor{babyblue}{rgb}{0.63, 0.79, 0.95}
+\colorlet{gblue}{blue!60!yellow}
+\definecolor{ltgray}{gray}{0.75}
+
+%%%%% too light
+% \definecolor{back}{HTML}{fcdada}
+% \definecolor{frame}{HTML}{3d7ea6}
+% \definecolor{bar}{HTML}{3d7ea6}
+% \definecolor{name}{HTML}{3d7ea6}
+% \definecolor{subsubsec}{HTML}{ffa5a5}
+% \definecolor{subsec}{HTML}{3d7ea6}
+% \definecolor{link}{HTML}{5c969e}
 
 
-\newcommand{\datedsubsection}[3]{
-  \makebox[0pt][l]{\bf#1}%
-  \makebox[\textwidth][c]{\bf#2}%
-  \makebox[0pt][r]{\bf#3}%
+%%%% nice green
+\definecolor{back}{HTML}{e0ece4}
+\definecolor{frame}{HTML}{66bfbf}
+\definecolor{bar}{HTML}{66bfbf}
+\definecolor{name}{HTML}{056674}
+\definecolor{subsubsec}{HTML}{ff4b5c}
+\definecolor{subsec}{HTML}{065c6f}
+\definecolor{link}{HTML}{056674}
+
+% \definecolor{back}{HTML}{fcdada}
+% \definecolor{frame}{HTML}{400082}
+% \definecolor{bar}{HTML}{400082}
+% % \definecolor{link}{HTML}{00bdaa}
+% \colorlet{link}{blue}
+% \definecolor{subsubsec}{HTML}{fe346e}
+% \definecolor{name}{HTML}{400082}
+% % \definecolor{name}{HTML}{6983aa}
+% \definecolor{subsec}{HTML}{400082}
+
+
+\newcommand{\sharedsec}{%
+  \setstretch{0.2}\Huge\scshape\vspace{0pt}
 }
-
-
-\newcommand{\name}[2]{%
-	\begin{tcolorbox}[sharp corners, colback=white, colframe=blue!80!yellow, width=0.55\linewidth, center]
-	\centerline{\Huge{\uppercase{#1} \color{blue!80!yellow}\bf\uppercase{#2}}}
-	\end{tcolorbox} 
-	\vspace{4em}
+\newcommand{\sharedsubsec}{%
+  \color{subsec}\Large\scshape\vspace{0pt}
 }
-
-\newcommand{\info}[5]{%
-	\begin{tcolorbox}[sharp corners, height=0.12\linewidth, colframe=white, width=1.2\textwidth, center]
-	% \begin{lift}[sharp corners, height=0.12\linewidth, colframe=white, width=1.2\textwidth, center]
-	\vspace{2.5em}
-	\centerline{\color{black}{#1} \textbullet \ \color{blue!80!yellow}{#2} \color{black}\textbullet \ {#3}}
-	\centerline{\color{blue!80!yellow}{#4} \color{black}\textbullet \ \color{blue!80!yellow}{#5}}
-	\end{tcolorbox} 
-	\vspace{-8em}
+\newcommand{\sharedsubsubsec}{%
+  \color{subsubsec}\large\raggedleft\vspace{0pt}
 }
-
-\newcommand{\workitems}[3]{%
-    \begin{itemize}
-    \item #1
-    \item #2
-    \item #3
-    \end{itemize}
-}
-
-\newcommand{\workitemstwo}[2]{%
-    \begin{itemize}
-    \item #1
-    \item #2
-    \end{itemize}
-}
-
-\newcommand{\school}[4]{%
-	{\bf\color{red!65!blue!90}#1}\\
-	#2\\
-	#3\\
-	{\color{blue!80!yellow}#4}\\
-	\vspace{5pt}
-}
-
-\newcommand{\courses}[3]{%
-	\vspace{-5pt}
-	#1\\
-	#2\\
-	#3\\
-}
-
-\newcommand{\summary}[2]{%
-	{\huge\centering\scshape\vspace{-5pt}#1}
-	\vspace{7.0pt}
-	\hline
-	\vspace{7.0pt}
-	{#2}
-	\vspace{14.0pt}
-	% \titlerule\vspace{0.0pt}
-}
-
-\newcommand{\headingright}[1]{%
-	{\huge\scshape\flushleft\vspace{-5pt}#1}
-	\vspace{7.0pt}
-	\hline
-	% \titlerule\vspace{0.0pt}
+\newcommand{\verticalbar}{
+  \centering\vspace{0pt}\color{bar}\hspace{12pt}\rule{2pt}{655pt}
 }
 
 
 \begin{document}
-	\info{***REMOVED***}{***REMOVED***}{***REMOVED***}{linkedin.com/***REMOVED***}{github.com/karlnr}
-	\name{Karl}{Northrup}
-	%
-	% LEFT COLUMN
-	%
-	% \par
-	\begin{minipage}[t]{0.30\textwidth}
-	\begin{flushright}
-		\section{Education}
-			\school{Master of Science}{Computer Science}{Georgia Institute of Technology}{2019-Present}
-			\school{Graduate Foundations\\M.S. Certificate}{Computer Science}{Kennesaw State University}{4.0 GPA | 2000-2020}
-			\school{Bachelor of Science}{Chemical Engineering}{Texas A\&M University}{summa cum laude | 2000-2020}
-		\section{Experience}
-			\school{Project \& Process Engineer}{Audubon Engineering}{***REMOVED***}{2000-Present}
-			\school{Process Engineer}{WS Nelson}{***REMOVED***}{2000-2020}
-			\school{Technology Consultant}{OTM Technology}{***REMOVED***}{2019-Present}
-		\section{Graduate\\Coursework}
-		\subsection{GaTech}
-			\courses{Artificial Intelligence}{Software Development Processes}{Machine Learning for Trading}
-		\subsection{KSU}
-			\courses{Datastructures \& Algorithms}{Programming Foundations}{Mathematical Structures}
-	\end{flushright}%
-	\end{minipage}%
-	%
-	% MIDDLE COLUMN
-	%
-	\begin{minipage}[t]{0.10\textwidth}
-		\centering\vspace{-5pt}\color{blue!80}\rule{2pt}{645pt}
-	\end{minipage}\hfill
-	%
-	% RIGHT COLUMN
-	%
-	\begin{minipage}[t]{0.60\textwidth}%
-		\summary{Summary}{TODO - update formatting, temp filler text/projects/details below}
-		\headingright{Projects}
-		\subsubsection{Chemical Engineering Projects}
-		\datedsubsection{Ethylene Facility Expansion}{}{HYSYS}
-		\workitems{Led Process Engineering effort to debottleneck and expand major ethylene terminal}{Responsible for design, optimization, and sizing of capital assets}{Primary engineer from front-end engineering design phase to Issue for Construction}
-		\subsubsection{Academic}
-		\datedsubsection{ML Stock Trader}{}{Python, Pandas}
-		\workitems
-		{Built a market similator to process pricing data, orders, and produce portfolio metrics}
-		{Researched stock indicators and tested with manual logic strategy to establish a baseline}
-		{Used machine learning techniques to develope a strategy learner using Random Forest \& Bag Learners}
-		\datedsubsection{JobRank Android App}{}{Java, SQLite}
-		\workitemstwo{Worked with a team to develop UML, Design \& Description documents per Project Specification}{Developed job tracking application to rank various job offers for comparison}
-		\datedsubsection{TextModifier Utility \& Library}{}{Java, jUnit}
-		\workitemstwo{Used Test Specification Language to develop jUnit tests to provide sufficient coverage}{Wrote a command line utility and java library allowing the user to modify text based on several option and arguments}
-		\datedsubsection{Mars Glider}{}{Python, Numpy}
-		\workitemstwo{Markov AI algorithms to allow Glider craft to navigate randomly generated fields of obstacles}{Developed SLAM algorithm to solve warehouse problems to optimize paths for highest reward}
-		\subsubsection{Freelance}
-		\datedsubsection{Inspection Tracking DB}{}{Access/SQL}
-		\datedsubsection{Pipe Inventory Tool}{}{MS Access, SQL}
-		% \workitems{did some stuff}{did more stuff}{more stuff to do}
-	\end{minipage}
-	% \par
+  % \setstretch{1}
+  \input{heading.tex}%
+  % === LEFT COLUMN ===
+  \begin{minipage}[t]{0.30\textwidth}%
+    \begin{flushright}
+      \input{leftside.tex}
+    \end{flushright}%
+  \end{minipage}%
+  % === MIDDLE COLUMN ===
+  \begin{minipage}[t]{0.10\textwidth}%
+    \verticalbar
+  \end{minipage}\hfill%
+  % === RIGHT COLUMN ====
+  \begin{minipage}[t]{0.60\textwidth}%
+    \begin{flushleft}
+      \input{rightside.tex}
+    \end{flushleft}%
+  \end{minipage}%
 \end{document}

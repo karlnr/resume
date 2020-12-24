@@ -1,0 +1,25 @@
+\newcommand{\name}[2]{%
+  \begin{tcolorbox}[sharp corners, colback=white, colframe=frame, width=0.55\linewidth, center]
+  \centerline{\LARGE{\uppercase{#1} \color{name}\bf\uppercase{#2}}}
+  \end{tcolorbox} 
+  \vspace{3.1em}
+}
+
+\newcommand{\info}[5]{%
+  \begin{tcolorbox}[sharp corners, height=0.1\linewidth, colback=back, colframe=white, width=1.2\textwidth, center]
+  \color{gray}\vspace{1.3em}\centerline{
+  \faMapMarker\textcolor{black}{\ \ {#1}} \ \ 
+  \faInbox\textcolor{link}{\ \ {#2}} \ \ 
+  % \faicon{paper-plane}\textcolor{ProcessBlue}{\ \ {#2}} \ \ 
+  \faPhone\ \ \color{black}{#3}
+  }
+  \centerline{
+  \faLinkedin\textcolor{link}{\ \ {#4}} \ \ 
+  \faGithub\textcolor{link}{\ \ {#5}}
+  }
+  \end{tcolorbox}
+  \vspace{-7.7em}
+}
+
+\info{***REMOVED***}{***REMOVED***}{***REMOVED***}{linkedin.com/in/***REMOVED***}{github.com/karlnr}
+\name{Karl}{Northrup}

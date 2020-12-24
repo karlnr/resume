@@ -1,0 +1,78 @@
+
+\titleformat{\section}{{\raggedright}\sharedsec}{}{0em}{}
+\titleformat{\subsection}{{\raggedright}\sharedsubsec}{}{0em}{}
+
+\setlength\parindent{0pt}
+ 
+\newcommand{\justifiedsubsection}[3]{%
+  \noindent\setstretch{0}
+  \makebox[0pt][l]{\bf#1}%
+  \makebox[\textwidth][c]{\bf#2}%
+  \makebox[0pt][r]{\bf#3}%
+}
+
+\newcommand{\workitems}[3]{%
+  \setstretch{0}
+  \begin{itemize}
+    \item #1
+    \item #2
+    \item #3
+  \end{itemize}
+}
+
+\newcommand{\workitemstwo}[2]{%
+  \setstretch{0}
+  \begin{itemize}
+    \item #1
+    \item #2
+  \end{itemize}
+}
+
+\newcommand{\summary}[1]{%
+  \section{Summary}
+  \noindent{#1}
+}
+
+% \setstretch{.95}
+\justifying
+\summary{TODO - update formatting, temp filler text/projects/details below; update formatting, temp filler text/projects/details below}
+\section{Projects}%
+%
+%
+\subsection{Chemical Engineering}
+\justifiedsubsection
+{Ethylene Facility Expansion}{}{Hysys}
+\workitems
+{Led Process Engineering effort to debottleneck and expand major ethylene terminal}{Responsible for process design, optimization, and sizing of capital assets}{Primary engineer from front-end engineering design phase to Issue for Construction}
+%
+\justifiedsubsection{Offshore Separator Package}{}{Hysys}
+\workitemstwo
+{Designed and developed 500k barrel/day separator for joint BP \& Shell effort}
+{Led process engineering effort from conception to final inspection}
+\subsection{Software Development | Academic}
+\justifiedsubsection
+{ML Stock Trader}{}{Python / Pandas}
+\workitems
+{Built a market similator to process pricing data, orders, and produce portfolio metrics}
+{Researched stock indicators and tested with manual logic strategy to establish a baseline}
+{Used machine learning techniques to develope a strategy learner using Random Forest \& Bag Learners}
+%
+\justifiedsubsection
+{JobRank Appication}{}{Android / Java / SQLite}
+\workitemstwo{Worked with a team to develop UML, Design \& Description documents per Project Specification}{Developed job tracking application to rank various job offers for comparison}
+%
+\justifiedsubsection
+{TextModifier Utility \& Library}{}{Java / jUnit}
+\workitemstwo{Used Test Specification Language to develop jUnit tests to provide sufficient coverage}{Wrote a command line utility and java library allowing the user to modify text based on several option and arguments}
+%
+\justifiedsubsection
+{Mars Glider}{}{Python / Numpy}
+\workitemstwo{Markov AI algorithms to allow Glider craft to navigate randomly generated fields of obstacles}{Developed SLAM algorithm to solve warehouse problems to optimize paths for highest reward}
+%
+%
+\subsection{Database Applications | Freelance}
+\justifiedsubsection
+{Inspection Tracking DB}{}{MS Access, SQL}
+\justifiedsubsection
+{Pipe Inventory Tool}{}{MS Access, SQL}
+% \workitems{did some stuff}{did more stuff}{more stuff to do}
