@@ -9,6 +9,7 @@
 \usepackage[many]{tcolorbox}
 \usepackage{setspace}
 \usepackage{ragged2e}
+\usepackage[normalem]{ulem}
 
 
 \RequirePackage{titlesec}
@@ -73,6 +74,45 @@
 \definecolor{frame}{HTML}{5c6e91}  
 % \colorlet{link}{black}
 \definecolor{link}{HTML}{5c6e91}
+
+
+\newtcolorbox{banner}[3][]{
+    center,
+    width=1.2\textwidth,
+    % height=0.1\linewidth, 
+    colframe=white, 
+    enhanced,
+    colback=back,
+    % attach boxed title to top center,
+    attach boxed title to top center={yshift=-4mm},
+    boxed title style={
+      % width=5cm,
+      sharp corners,
+      colframe=frame, 
+      enhanced, 
+      show bounding box, 
+      colback=white,
+      left=3cm,
+      right=3cm,
+      % center,
+      halign=center,
+    },
+    % detach title, attach boxed title to top center,
+    % boxsep=0em,
+    % titlerule=20pt,
+    % bottomtitle=-5cm,
+    top=4mm,
+    % grow to bottom by=-10mm,
+    % titlebox=invisible,
+    % fonttitle=\bfseries,
+    title=\firstname{#2}\lastname{#3},#1
+}
+
+
+
+
+
+
 
 
 

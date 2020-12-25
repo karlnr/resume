@@ -1,25 +1,92 @@
-\newcommand{\name}[2]{%
-  \begin{tcolorbox}[sharp corners, colback=white, colframe=frame, width=0.55\linewidth, center]
-  \centerline{\LARGE{\uppercase{#1} \color{name}\bf\uppercase{#2}}}
-  \end{tcolorbox} 
-  \vspace{3.1em}
+\newcommand{\firstname}[1]{%
+  \LARGE\color{black}\uppercase{#1}
 }
 
-\newcommand{\info}[5]{%
-  \begin{tcolorbox}[sharp corners, height=0.1\linewidth, colback=back, colframe=white, width=1.2\textwidth, center]
-  \color{gray}\vspace{1.3em}\centerline{
-  \faMapMarker\textcolor{black}{\ \ {#1}} \ \ 
-  \faInbox\textcolor{link}{\ \ {#2}} \ \ 
-  % \faicon{paper-plane}\textcolor{ProcessBlue}{\ \ {#2}} \ \ 
-  \faPhone\ \ \color{black}{#3}
-  }
-  \centerline{
-  \faLinkedin\textcolor{link}{\ \ {#4}} \ \ 
-  \faGithub\textcolor{link}{\ \ {#5}}
-  }
-  \end{tcolorbox}
-  \vspace{-7.7em}
+\newcommand{\lastname}[1]{%
+  \LARGE\color{name}\bf\uppercase{#1}
 }
 
-\info{***REMOVED***}{***REMOVED***}{***REMOVED***}{linkedin.com/in/***REMOVED***}{github.com/karlnr}
-\name{Karl}{Northrup}
+% \newcommand{\namebox}[2]{%
+%   \begin{tcolorbox}[
+%     sharp corners, 
+%     % halign=center,
+%     colback=white, 
+%     colframe=frame,
+%     width=0.3\linewidth,
+%     enhanced,
+%     show bounding box,
+%     % boxsep=0em,
+%     % before skip,
+%     % nobeforeafter,
+%     % grow to left by=5pt,
+%     % boxrule=5pt,
+%     ]
+%     \centerline{\firstname{#1}\lastname{#2}}
+%   \end{tcolorbox}
+%   % \vspace{3.1em}
+% }
+
+\newcommand{\gap}{\hspace{0.4em}}
+
+% \newcommand{\infobox}[5]{%
+%   \begin{tcolorbox}[
+%     sharp corners, 
+%     height=0.1\linewidth, 
+%     colback=back, 
+%     colframe=white, 
+%     width=1.2\textwidth,
+%     enlarge bottom by=0.85em,
+%     center]
+%   \color{gray!75}
+%   % \vspace{0.85em}
+%     \centerline{\address{#1}\gap\gap\email{#2}\gap\gap\phone{#3}}
+%     \vspace{0.2em}
+%     \centerline{\linkedin{#4}\gap\gap\github{#5}}
+%   \end{tcolorbox}
+%   % \vspace{-7.7em}
+% }
+
+\newcommand{\infobox}[5]{%
+  \color{gray!75}
+  % \vspace{0.85em}
+    \centerline{\address{#1}\gap\gap\email{#2}\gap\gap\phone{#3}}
+    \vspace{0.2em}
+    \centerline{\linkedin{#4}\gap\gap\github{#5}}
+  % \vspace{-7.7em}
+}
+
+
+
+
+\newcommand{\address}[1]{%
+  \faMapMarker\gap\textcolor{black}{#1}
+}
+
+\newcommand{\email}[1]{%
+  \faInbox\gap\textcolor{link}{\uline{#1}}
+}
+
+\newcommand{\phone}[1]{%
+  \faPhone\gap\textcolor{black}{#1}
+}
+
+\newcommand{\linkedin}[1]{%
+  \faLinkedin\gap\textcolor{link}{\uline{#1}} 
+}
+
+\newcommand{\github}[1]{%
+  \faGithub\gap\textcolor{link}{\uline{#1}}   
+}
+
+
+
+\begin{banner}
+  {Karl}{Northrup}
+  \infobox
+    {***REMOVED***}
+    {***REMOVED***}
+    {***REMOVED***}
+    {linkedin.com/in/***REMOVED***}
+    {github.com/karlnr}
+\end{banner}
+% }
