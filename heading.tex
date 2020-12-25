@@ -6,58 +6,6 @@
   \LARGE\color{name}\bf\uppercase{#1}
 }
 
-% \newcommand{\namebox}[2]{%
-%   \begin{tcolorbox}[
-%     sharp corners, 
-%     % halign=center,
-%     colback=white, 
-%     colframe=frame,
-%     width=0.3\linewidth,
-%     enhanced,
-%     show bounding box,
-%     % boxsep=0em,
-%     % before skip,
-%     % nobeforeafter,
-%     % grow to left by=5pt,
-%     % boxrule=5pt,
-%     ]
-%     \centerline{\firstname{#1}\lastname{#2}}
-%   \end{tcolorbox}
-%   % \vspace{3.1em}
-% }
-
-\newcommand{\gap}{\hspace{0.4em}}
-
-% \newcommand{\infobox}[5]{%
-%   \begin{tcolorbox}[
-%     sharp corners, 
-%     height=0.1\linewidth, 
-%     colback=back, 
-%     colframe=white, 
-%     width=1.2\textwidth,
-%     enlarge bottom by=0.85em,
-%     center]
-%   \color{gray!75}
-%   % \vspace{0.85em}
-%     \centerline{\address{#1}\gap\gap\email{#2}\gap\gap\phone{#3}}
-%     \vspace{0.2em}
-%     \centerline{\linkedin{#4}\gap\gap\github{#5}}
-%   \end{tcolorbox}
-%   % \vspace{-7.7em}
-% }
-
-\newcommand{\infobox}[5]{%
-  \color{gray!75}
-  % \vspace{0.85em}
-    \centerline{\address{#1}\gap\gap\email{#2}\gap\gap\phone{#3}}
-    \vspace{0.2em}
-    \centerline{\linkedin{#4}\gap\gap\github{#5}}
-  % \vspace{-7.7em}
-}
-
-
-
-
 \newcommand{\address}[1]{%
   \faMapMarker\gap\textcolor{black}{#1}
 }
@@ -78,6 +26,14 @@
   \faGithub\gap\textcolor{link}{\uline{#1}}   
 }
 
+\newcommand{\gap}{\hspace{0.4em}}
+
+\newcommand{\infobox}[5]{%
+  \color{gray!75}
+    \centerline{\address{#1}\gap\gap\email{#2}\gap\gap\phone{#3}}
+    \vspace{0.2em}
+    \centerline{\linkedin{#4}\gap\gap\github{#5}}
+}
 
 
 \begin{banner}
@@ -89,4 +45,3 @@
     {linkedin.com/in/***REMOVED***}
     {github.com/karlnr}
 \end{banner}
-% }

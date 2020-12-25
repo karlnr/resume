@@ -1,9 +1,8 @@
-% \documentclass[2020/12/10 custom cv class]{cv}
+
 \documentclass[10pt, letterpaper]{article}
 \usepackage{fontspec}
-\usepackage{fontawesome5}  % for glyph style icons
+\usepackage{fontawesome5}
 \setmainfont{Corbel}
-% \usepackage{tgpagella}
 \usepackage{geometry}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[many]{tcolorbox}
@@ -15,106 +14,41 @@
 \RequirePackage{titlesec}
 \setlength\parindent{0pt}
 \geometry{left=1.2cm, top=1.3cm, right=1.8cm, bottom=0cm, footskip=0.7cm}
-% \LoadClass{article}  % for using .cls file
-
-% left, before, after
 \titlespacing\section{0em}{1.5em}{0.5em}
 \titlespacing\subsection{0pt}{0em}{0.5em}
+% left, before, after
 
 
-\definecolor{azure}{rgb}{0.0, 0.5, 1.0}
-\definecolor{afblue}{rgb}{0.36, 0.54, 0.66}
-\definecolor{babyblue}{rgb}{0.63,   0.79, 0.95}
-\colorlet{gblue}{blue!60!yellow}
-\definecolor{ltgray}{gray}{0.75}
-
-%%%%% too light
-% \definecolor{back}{HTML}{fcdada}
-% \definecolor{frame}{HTML}{3d7ea6}
-% \definecolor{bar}{HTML}{3d7ea6}
-% \definecolor{name}{HTML}{3d7ea6}
-% \definecolor{subsubsec}{HTML}{ffa5a5}
-% \definecolor{subsec}{HTML}{3d7ea6}
-% \definecolor{link}{HTML}{5c969e}
-
-
-% %%%% nice green
-% \definecolor{frame}{HTML}{66bfbf}
-% \definecolor{bar}{HTML}{66bfbf}
-% \definecolor{name}{HTML}{056674}
-% \definecolor{link}{HTML}{056674}
-%
-% \definecolor{back}{HTML}{e0ece4}
-% \definecolor{subsubsec}{HTML}{ff4b5c}
-% \definecolor{subsec}{HTML}{065c6f}
-
-%% back and link, redish left
-% \definecolor{back}{HTML}{e8e8e8}
-% \definecolor{link}{HTML}{056674}
-% \definecolor{subsubsec}{HTML}{f05454}
-
-
-% %%% ok grey red blue
-% \definecolor{frame}{HTML}{30475e}  
-% \definecolor{bar}{HTML}{222831}  %% yoo dark blue or black
-% \definecolor{link}{HTML}{056674}  % teal dark link
-% \definecolor{name}{HTML}{222831}
-%
-% \definecolor{back}{HTML}{e8e8e8}  %%grey
-% \definecolor{subsubsec}{HTML}{f05454} % orangish red
-% \definecolor{subsec}{HTML}{30475e} % darkish gre blue
-
-
-%%%%%%% the orange that goes with it: dd9866
+%%%%%%% maroon, orange-red, soft blue
+\definecolor{ltgray}{gray}{0.75}  % calendar
 \definecolor{back}{HTML}{eeeded}
 \definecolor{subsubsec}{HTML}{8f384d}  % maroonish
-\definecolor{subsec}{HTML}{5c6e91}  % soft blyu
+\definecolor{subsec}{HTML}{5c6e91}  % soft blue
 \definecolor{name}{HTML}{dd9866}
 \definecolor{bar}{HTML}{dd9866}  
 \definecolor{frame}{HTML}{5c6e91}  
-% \colorlet{link}{black}
 \definecolor{link}{HTML}{5c6e91}
 
 
 \newtcolorbox{banner}[3][]{
     center,
     width=1.2\textwidth,
-    % height=0.1\linewidth, 
     colframe=white, 
     enhanced,
     colback=back,
-    % attach boxed title to top center,
     attach boxed title to top center={yshift=-4mm},
     boxed title style={
-      % width=5cm,
       sharp corners,
       colframe=frame, 
       enhanced, 
-      show bounding box, 
       colback=white,
       left=3cm,
       right=3cm,
-      % center,
       halign=center,
     },
-    % detach title, attach boxed title to top center,
-    % boxsep=0em,
-    % titlerule=20pt,
-    % bottomtitle=-5cm,
     top=4mm,
-    % grow to bottom by=-10mm,
-    % titlebox=invisible,
-    % fonttitle=\bfseries,
     title=\firstname{#2}\lastname{#3},#1
 }
-
-
-
-
-
-
-
-
 
 
 \newcommand{\sharedsec}{%

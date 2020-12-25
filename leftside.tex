@@ -5,18 +5,11 @@
 
 \setlength\parindent{0pt}
 
-% \newcommand{\courses}[3]{%
-%   #1\\
-%   #2\\
-%   #3
-% }
 
 % hspace in gcal & school tcolorbox 
 \newcommand{\gcal}{%
   \textcolor{ltgray}\faCalendar
 }
-
-
 
 \newcommand{\gcalmargin}[1]{%
   \begin{tcolorbox}[
@@ -27,13 +20,11 @@
   boxsep=0em,
   left=0em,top=0.0em,
   bottom=0.0em,
-  % enlarge bottom by=-0.3em,
   right=-1.45em]
   {{#1}\hspace{0.5em}\gcal}
   \end{tcolorbox}
 }
 
-  % \vspace{-.3em}
 \newcommand{\school}[5]{%
   {#1}
   \vspace{-0.25em}
