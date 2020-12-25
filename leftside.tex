@@ -1,18 +1,19 @@
 
 \titleformat{\section}{\raggedleft\sharedsec}{}{0em}{}
 \titleformat{\subsubsection}{\raggedleft\sharedsubsubsec}{}{0em}{}
-\titlespacing\subsubsection{0pt}{1em}{0.5em}
+\titlespacing\subsubsection{0pt}{1em}{0.0em}
 
 \setlength\parindent{0pt}
 
 
 % hspace in gcal & school tcolorbox 
 \newcommand{\gcal}{%
-  \textcolor{ltgray}\faCalendar
+  {\small\textcolor{ltgray}\faCalendar\par}
 }
 
 \newcommand{\gcalmargin}[1]{%
   \begin{tcolorbox}[
+  enhanced,
   colframe=white, 
   colback=white,
   halign=right, 
@@ -20,71 +21,86 @@
   boxsep=0em,
   left=0em,top=0.0em,
   bottom=0.0em,
-  right=-1.45em]
-  {{#1}\hspace{0.5em}\gcal}
+  right=-17pt,
+  ]
+  {#1}
   \end{tcolorbox}
 }
 
-\newcommand{\school}[5]{%
-  {#1}
-  \vspace{-0.25em}
-  {\bf{\color{black}{#2}}}\\
-  \vspace{0.25em}
-  {#3}
-  \gcalmargin{#4}
-  \vspace{-0.2em}
-  {#5}
+\newcommand{\school}[4]{%
+  \setlength\tabcolsep{3pt}
+  \gcalmargin{%
+  \begin{tabular}{rl}
+  {\bf#1} & \ \\
+  {#2} & \ \\
+  {#3} & \gcal \\
+  {#4} & \ 
+  \end{tabular}
+  }
+}
+  % {\bfseries\color{black}#1\par}
+  % {#2}
+  % \gcalmargin{#3}{4.0 GPA}
+  % \vspace{-3pt}
+  % \vspace{-4pt}
+  % \vspace{0.25em}
+
+\newcommand{\position}[3]{%
+  \gcalmargin{%
+  \begin{tabular}{rl}
+  {\bf#1} & \ \\
+  {#2} & \gcal \\
+  {#3} & \ 
+  \end{tabular}
+  }
 }
 
-\newcommand{\position}[4]{%
-  {#1}%
-  \vspace{-0.25em}
-  {\bf\color{black}#2}
-  \gcalmargin{#3}
-  \vspace{-0.2em}
-  {#4}
-}
-
-
-\setstretch{0.95}
+  % \vspace{-3pt}
+  % \vspace{-2pt}
+  % \vspace{-0.2em}
+% \noindent
+% \setstretch{0.95}
 \section{Education}
-  \school
-    {\subsubsection{Master of Science}}
-    {Computer Science}
-    {Georgia Institute of Technology}
-    {Jan 2019 -- Present}{4.0 GPA}%
-  \school
-    {\subsubsection{Graduate Certificate}}
-    {Computer Science Foundations}
-    {Kennesaw State University}
-    {Jan 2018 -- Dec 2018}{4.0 GPA}%
-  \school
-    {\subsubsection{Bachelor of Science}}
-    {Chemical Engineering}
-    {Texas A\&M University}
-    {\textit{summa cum laude}, May 2012}
-    {3.94 GPA}%
+  \subsubsection{Master of Science} 
+  \school%
+    {Computer Science}%
+    {Georgia Institute of Technology}%
+    {Jan 2020 -- Present}%
+    {4.0 GPA}
+  \subsubsection{Graduate Certificate}
+  \school%
+    {Computer Science Foundations}%
+    {Kennesaw State University}%
+    {May 2019}%
+    {4.0 GPA}
+  \subsubsection{Bachelor of Science}
+  \school%
+    {Chemical Engineering}%
+    {Texas A\&M University}%
+    {\textit{summa cum laude}, May 2012}%
+    {3.94 GPA}
 \section{Experience}
-  \position
-    {\subsubsection{Project \& Process Engineer}}
-    {Audubon Engineering}
-    {2016 -- 2020}
-    {***REMOVED***}%
-  \position
-    {\subsubsection{O\&G Technology Consultant}}
-    {OTM Technology}
-    {2016 -- 2016}
-    {***REMOVED***}%
-  \position
-    {\subsubsection{Process Engineer}}
-    {W.S. Nelson}
-    {2012 -- 2016}
-    {***REMOVED***}%
+  \subsubsection{Project \& Process Engineer}
+  \position%
+    {Audubon Engineering}%
+    {2016 -- 2020}%
+    {***REMOVED***}
+  \subsubsection{O\&G Technology Consultant}
+  \position%
+    {OTM Technology}%
+    {2016 -- 2016}%
+    {***REMOVED***}
+  \subsubsection{Process Engineer}
+  \position%
+    {W.S. Nelson}%
+    {2012 -- 2016}%
+    {***REMOVED***}
 \section{Graduate Coursework}
   \subsubsection{GaTech | KSU}
+      {\vspace{0.1em}}
       Machine Learning for Trading\\
-      Software Development Processes\\
       Artificial Intelligence for Robotics\\
+      Software Development Processes\\
       Mathematical Structures for C.S.\\
       Database Design\\
       Datastructures \& Algorithms\\

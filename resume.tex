@@ -9,11 +9,12 @@
 \usepackage{setspace}
 \usepackage{ragged2e}
 \usepackage[normalem]{ulem}
-
+\usepackage{enumitem}  % customize list indent 
+\pagestyle{empty}  % no footer
 
 \RequirePackage{titlesec}
 \setlength\parindent{0pt}
-\geometry{left=1.2cm, top=1.3cm, right=1.8cm, bottom=0cm, footskip=0.7cm}
+\geometry{left=0.0in, top=0.4in, right=0.5in, bottom=0.4in, footskip=0.0in}
 \titlespacing\section{0em}{1.5em}{0.5em}
 \titlespacing\subsection{0pt}{0em}{0.5em}
 % left, before, after
@@ -42,12 +43,14 @@
       colframe=frame, 
       enhanced, 
       colback=white,
-      left=3cm,
-      right=3cm,
+      left=40pt,
+      right=35pt,
+      top=0.5em,
+      bottom=0.5em,
       halign=center,
     },
     top=4mm,
-    title=\firstname{#2}\lastname{#3},#1
+    title=\firstname{#2}\ \lastname{#3},#1
 }
 
 
@@ -61,7 +64,7 @@
   \color{subsubsec}\large\raggedleft\vspace{0pt}
 }
 \newcommand{\verticalbar}{
-  \centering\vspace{0pt}\color{bar}\hspace{12pt}\rule{2pt}{655pt}
+  \centering\vspace{0pt}\color{bar}\hspace{3pt}\rule{2pt}{655pt}
 }
 
 
