@@ -1,7 +1,9 @@
 \input{descriptions.tex}
+\newcommand{\lstindent}{15pt}  %% for description bullets
+
+
 \titleformat{\section}{{\raggedright}\sharedsec}{}{0em}{}
 \titleformat{\subsection}{{\raggedright}\sharedsubsec}{}{0em}{}
-
 \setlength\parindent{0pt}
  
 \newcommand{\justifiedsubsection}[2]{%
@@ -11,9 +13,10 @@
   \makebox[0pt][r]{\bf#2}%
 }
 
+
 \newcommand{\workitems}[3]{%
   \setstretch{0}
-  \begin{itemize}[leftmargin=15pt]
+  \begin{itemize}[leftmargin=\lstindent]
     \item #1
     \item #2
     \item #3
@@ -22,7 +25,7 @@
 
 \newcommand{\workitemstwo}[2]{%
   \setstretch{0}
-  \begin{itemize}[leftmargin=15pt]
+  \begin{itemize}[leftmargin=\lstindent]
     \item #1
     \item #2
   \end{itemize}
