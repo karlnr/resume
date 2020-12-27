@@ -4,7 +4,7 @@ Initial version of a single page, two-column resume written in LaTeX.
 
 ## Overview
 
-The main source file is resume.tex. Heading and column specific layout & content is imported from heading.tex, leftside.tex, and rightside.tex. Personal information is located in variables.tex. Future versions will use cv.cls to separate layout & formatting from `.tex` content files.  
+The main source file is `resume.tex`. Heading and column specific layout & content is imported from `heading.tex`, `leftside.tex`, and `rightside.tex`. Personal information is located in `variables.tex`. Future versions will use `cv.cls` to separate layout & formatting from `.tex` content files.  
 
 ## Requirements
 
