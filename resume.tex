@@ -14,7 +14,7 @@
 
 \RequirePackage{titlesec}
 \setlength\parindent{0pt}
-\geometry{left=0.0in, top=0.4in, right=0.5in, bottom=0.4in, footskip=0.0in}
+\geometry{left=0.0in, top=0.4in, right=0.5in, bottom=0.3in, footskip=0.0in}
 \titlespacing\section{0em}{1.5em}{0.5em}
 \titlespacing\subsection{0pt}{0em}{0.5em}
 % left, before, after
@@ -22,7 +22,7 @@
 
 %%%%%%% maroon, orange-red, soft blue
 \definecolor{ltgray}{gray}{0.75}  % calendar
-\definecolor{back}{HTML}{eeeded}
+\definecolor{back}{HTML}{eeeded}  % off-whitish gray
 \definecolor{subsubsec}{HTML}{8f384d}  % maroonish
 \definecolor{subsec}{HTML}{5c6e91}  % soft blue
 \definecolor{name}{HTML}{dd9866}
@@ -36,7 +36,8 @@
     width=1.2\textwidth,
     colframe=white, 
     enhanced,
-    colback=back,
+    colback={frame!15},  % lighter version of frame color
+    % colback={back},  
     attach boxed title to top center={yshift=-4mm},
     boxed title style={
       sharp corners,
@@ -48,8 +49,9 @@
       top=0.5em,
       bottom=0.5em,
       halign=center,
+      boxrule=2pt,
     },
-    top=4mm,
+    top=4.5mm,
     title=\firstname{#2}\ \lastname{#3},#1
 }
 
@@ -64,7 +66,7 @@
   \color{subsubsec}\large\raggedleft\vspace{0pt}
 }
 \newcommand{\verticalbar}{
-  \centering\vspace{0pt}\color{bar}\hspace{3pt}\rule{2pt}{655pt}
+  \centering\vspace{0pt}\color{bar}\hspace{3pt}\rule{2.3pt}{655pt}
 }
 
 
