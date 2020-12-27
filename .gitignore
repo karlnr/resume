@@ -6,4 +6,5 @@
 *.fdb_latexmk
 *.fls
 *.log
+variables.mine.tex
 misc/
