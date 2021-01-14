@@ -2,6 +2,21 @@
 	"folders":
 	[
 		{
+			"file_exclude_patterns":
+            [
+                "*.aux",
+                "*.fls",
+                "*.log",
+                "*.gz",
+                "*.xdv",
+                "*.fdb_latexmk",
+            ],
+
+            // "folder_exclude_patterns":
+            // [
+            //     "node_modules"
+            // ],
+
 			"path": "."
 		}
 	],
@@ -10,7 +25,4 @@
 		{
 	      "TEXroot": "resume.tex"
 	  	}
-
-
-
 }

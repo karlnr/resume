@@ -1,16 +1,24 @@
-
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Left Side Title Formats                                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \titleformat{\section}{\raggedleft\sharedsec}{}{0em}{}
 \titleformat{\subsubsection}{\raggedleft\sharedsubsubsec}{}{0em}{}
 \titlespacing\subsubsection{0pt}{1em}{0.0em}
-
 \setlength\parindent{0pt}
-
-
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Left Side Section Commands                                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 % hspace in gcal & school tcolorbox 
 \newcommand{\gcal}{%
   {\small\textcolor{ltgray}\faCalendar\par}
 }
-
+%
 \newcommand{\gcalmargin}[1]{%
   \begin{tcolorbox}[
   enhanced,
@@ -26,7 +34,7 @@
   {#1}
   \end{tcolorbox}
 }
-
+%
 \newcommand{\school}[4]{%
   \setlength\tabcolsep{3pt}
   \gcalmargin{%
@@ -38,13 +46,7 @@
   \end{tabular}
   }
 }
-  % {\bfseries\color{black}#1\par}
-  % {#2}
-  % \gcalmargin{#3}{4.0 GPA}
-  % \vspace{-3pt}
-  % \vspace{-4pt}
-  % \vspace{0.25em}
-
+%
 \newcommand{\position}[3]{%
   \gcalmargin{%
   \begin{tabular}{rl}
@@ -54,55 +56,16 @@
   \end{tabular}
   }
 }
-
-  % \vspace{-3pt}
-  % \vspace{-2pt}
-  % \vspace{-0.2em}
-% \noindent
-% \setstretch{0.95}
-\section{Education}
-  \subsubsection{Master of Science} 
-  \school%
-    {Computer Science}%
-    {Georgia Institute of Technology}%
-    {Jan 2020 -- Present}%
-    {4.0 GPA}
-  \subsubsection{Graduate Certificate}
-  \school%
-    {Computer Science Foundations}%
-    {Kennesaw State University}%
-    {May 2019}%
-    {4.0 GPA}
-  \subsubsection{Bachelor of Science}
-  \school%
-    {Chemical Engineering}%
-    {Texas A\&M University}%
-    {\textit{summa cum laude}, May 2012}%
-    {3.94 GPA}
-\section{Experience}
-  \subsubsection{Project \& Process Engineer}
-  \position%
-    {Audubon Engineering}%
-    {2016 -- 2020}%
-    \Location
-  \subsubsection{O\&G Technology Consultant}
-  \position%
-    {OTM Technology}%
-    {2016 -- 2016}%
-    \Location
-  \subsubsection{Process Engineer}
-  \position%
-    {W.S. Nelson}%
-    {2012 -- 2016}%
-    \Location
-\section{Graduate Coursework}
-  \subsubsection{GaTech | KSU}
-      {\vspace{0.1em}}
-      Machine Learning for Trading\\
-      Artificial Intelligence for Robotics\\
-      Software Development Processes\\
-      Mathematical Structures for C.S.\\
-      Database Design\\
-      Datastructures \& Algorithms\\
-      Computer Architecture \& Op. Sys.\\
-      Foundations of Programming\\
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Left Side Content                                                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\input{left_side_content/education.tex}
+\input{left_side_content/experience.tex}
+\input{left_side_content/coursework.tex}
+%
+%
+%

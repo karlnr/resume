@@ -1,20 +1,27 @@
-\input{descriptions.tex}
-\newcommand{\lstindent}{15pt}  %% for description bullets
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Right Side Title Formats                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \titleformat{\section}{{\raggedright}\sharedsec}{}{0em}{}
 \titleformat{\subsection}{{\raggedright}\sharedsubsec}{}{0em}{}
 \setlength\parindent{0pt}
- 
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Right Side Section Commands                                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\newcommand{\lstindent}{15pt}  %% for description bullets
+%
 \newcommand{\justifiedsubsection}[2]{%
   \noindent\setstretch{0}%
   \makebox[0pt][l]{\bf#1}%
   \makebox[\textwidth][c]{}%
   \makebox[0pt][r]{\bf#2}%
 }
-
-
-\newcommand{\workitems}[3]{%
+%
+\newcommand{\workitemsThree}[3]{%
   \setstretch{0}
   \begin{itemize}[leftmargin=\lstindent]
     \item #1
@@ -22,79 +29,57 @@
     \item #3
   \end{itemize}
 }
-
-\newcommand{\workitemstwo}[2]{%
+%
+\newcommand{\workitemsTwo}[2]{%
   \setstretch{0}
   \begin{itemize}[leftmargin=\lstindent]
     \item #1
     \item #2
   \end{itemize}
 }
-
+%
 \newcommand{\summary}[1]{%
   \section{Summary}
   \noindent{#1}
 }
-
-% \setstretch{.95}
+%
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Right Side Content                                                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \justifying
-\summary\Summary
 %
 %
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Summary                                                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\summary{%
+\input{right_side_content/summary.tex}
+}
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Projects                                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \section{Projects}%
 %
 \subsection{Chemical Engineering | Key Achievements}
 %
-\justifiedsubsection%
-{Ethylene Facility Expansion}{Hysys}
-%
-\workitems%
-{Led Process Engineering effort to debottleneck and expand major ethylene terminal}{Responsible for process design, optimization, and sizing of capital assets}{Primary engineer from front-end engineering design phase to Issue for Construction}
-%
-\justifiedsubsection%
-{Offshore Separator Package}{Hysys}
-%
-\workitemstwo%
-{Designed and developed 500k barrel/day separator for joint BP \& Shell effort}
-{Led process engineering effort from conception to final shop inspection}
-%
-%
+\input{right_side_content/projects_ChemEngineering.tex}
 %
 \subsection{Software Development | Academic}
 %
-\justifiedsubsection%
-{ML Stock Trader}{Python / Pandas}
-%
-\workitems%
-{Built a market similator to process pricing data, orders, and produce portfolio metrics}
-{Researched stock indicators and tested with manual logic strategy to establish a baseline}
-{Used machine learning techniques to develope a strategy learner using Random Forest \& Bag Learners}
-%
-\justifiedsubsection%
-{JobRank Application}{Android / Java / SQLite}
-%
-\workitemstwo%
-{Worked with a team to develop UML, Design \& Description documents per Project Specification}{Developed job tracking application to rank various job offers for comparison}
-%
-\justifiedsubsection%
-{TextModifier Utility \& Library}{Java / jUnit}
-%
-\workitemstwo%
-{Used Test Specification Language to develop jUnit tests to provide sufficient coverage}{Wrote a command line utility and java library allowing the user to modify text based on several option and arguments}
-%
-\justifiedsubsection%
-{Mars Glider}{Python / Numpy}
-%
-\workitemstwo%
-{Markov AI algorithms to allow Glider craft to navigate randomly generated fields of obstacles}{Developed SLAM algorithm to solve warehouse problems to optimize paths for highest reward}
-%
-%
+\input{right_side_content/projects_SoftwareDevelopment.tex}
 %
 \subsection{Database Applications | Freelance}
 %
-\justifiedsubsection%
-{DB Cranes -- Inspection Tracking}{Access}
+\input{right_side_content/projects_DatabaseApplications}
 %
-\justifiedsubsection%
-{Thomas Reprographics -- Pipe Yard Inventory Tool}{Access}
+%

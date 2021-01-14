@@ -1,43 +1,49 @@
-\input{variables.tex}
-
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Heading / Banner Commands                                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \newcommand{\firstname}[1]{%
   \noindent\huge\color{black}\MakeUppercase{#1}
 }
-
+%
 \newcommand{\lastname}[1]{%
   \noindent\huge\color{name}\bf{\MakeUppercase{#1}}
 }
-
+%
 \newcommand{\address}[1]{%
   \faMapMarker\gap\textcolor{black}{#1}
 }
-
+%
 \newcommand{\email}[1]{%
   \faInbox\gap\textcolor{link}{\uline{#1}}
 }
-
+%
 \newcommand{\phone}[1]{%
   \faPhone\gap\textcolor{black}{#1}
 }
-
+%
 \newcommand{\linkedin}[1]{%
   \faLinkedin\gap\textcolor{link}{\uline{#1}} 
 }
-
+%
 \newcommand{\github}[1]{%
   \faGithub\gap\textcolor{link}{\uline{#1}}   
 }
-
+%
 \newcommand{\gap}{\hspace{0.3em}}
-
+%
 \newcommand{\infobox}[5]{%
   \color{gray!75}\small
     \centerline{\address{#1}\gap\gap\email{#2}\gap\gap\phone{#3}}
     \vspace{0.30em}
     \centerline{\linkedin{#4}\gap\gap\github{#5}}
 }
-
-
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Banner Formatting                                                        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \newtcolorbox{banner}[3][]{
     center,
     width=1.2\textwidth,
@@ -60,15 +66,15 @@
     top=3.5mm,
     title=\firstname{#2}\ \lastname{#3},#1
 }
-
-
-\begin{banner}
-  \First
-  \Last
-  \infobox
-    \Location
-    \Email
-    \Phone
-    \Linkedin
-    \Github
-\end{banner}
+%
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Heading / Banner Content                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\input{heading_content/banner.tex}
+%
+%
+%

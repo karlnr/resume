@@ -1,0 +1,921 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"TRI",
+				"TRIM_ONLY"
+			],
+			[
+				"S",
+				"String"
+			],
+			[
+				"fi",
+				"final"
+			],
+			[
+				"trim",
+				"trimval\tstatement"
+			],
+			[
+				"opt",
+				"opt_num\tstatement"
+			],
+			[
+				"ord",
+				"ordbefore"
+			],
+			[
+				"single",
+				"singlerep"
+			],
+			[
+				"both",
+				"bothmultiargs"
+			],
+			[
+				"mult",
+				"multiargs"
+			],
+			[
+				"all",
+				"allargs"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "resume.sublime-project",
+			"settings":
+			{
+				"buffer_size": 105,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"unfol",
+				"Code Folding: Unfold All"
+			],
+			[
+				"fold",
+				"Filter Lines: Fold Excluding String"
+			],
+			[
+				"unfo",
+				"Code Folding: Unfold All"
+			],
+			[
+				"un",
+				"Code Folding: Unfold All"
+			],
+			[
+				"unfold",
+				"Code Folding: Unfold All"
+			],
+			[
+				"keybind",
+				"Preferences: Key Bindings"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"latex",
+				"LaTeXTools: Check system"
+			],
+			[
+				"th",
+				"UI: Select Theme"
+			],
+			[
+				"pac in",
+				"Package Control: Install Package"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"hound",
+				"Hound Search"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"scheme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"close",
+				"Terminus: Close All"
+			],
+			[
+				"ui",
+				"UI: Select Color Scheme"
+			],
+			[
+				"schem",
+				"UI: Select Theme"
+			],
+			[
+				"sche",
+				"UI: Select Color Scheme"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"sidebar",
+				"Side Bar: Refresh"
+			],
+			[
+				"keybd",
+				"Preferences: Key Bindings"
+			],
+			[
+				"keybid",
+				"Preferences: Key Bindings"
+			],
+			[
+				"key bind",
+				"Preferences: Key Bindings"
+			],
+			[
+				"folding",
+				"Filter Lines: Fold With String"
+			],
+			[
+				"fold ",
+				"Code Folding: Unfold All"
+			],
+			[
+				"merge",
+				"Sublimerge: Show Uncommited Changes..."
+			],
+			[
+				"diff",
+				"GitGutter: Show Diff Popup"
+			],
+			[
+				"find",
+				"Find: In Current File"
+			],
+			[
+				"find ",
+				"Find: In Project"
+			],
+			[
+				"keymap",
+				"Keymaps: Find a keymap for..."
+			],
+			[
+				"keyma",
+				"Keymaps: Find a keymap for..."
+			],
+			[
+				"fold with",
+				"Filter Lines: Fold With String"
+			],
+			[
+				"packagee list",
+				"Package Control: List Packages"
+			],
+			[
+				"list ins",
+				"Terminus: List Shells"
+			],
+			[
+				"lint",
+				"Anaconda: Disable linting on this file"
+			],
+			[
+				"sublime mer",
+				"Sublimerge: Show Changes Between Current and Remote..."
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control:",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: Satisfy Dependencies",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"git g",
+				"Preferences: GitGutter Settings"
+			],
+			[
+				"git",
+				"GitGutter: Show Line Annotation"
+			],
+			[
+				"term",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"ke",
+				"Keymaps: Find a keymap for..."
+			],
+			[
+				"key",
+				"Keymaps: Cheat Sheet"
+			],
+			[
+				"terminal",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"terminus open",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"package dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"run",
+				"Anaconda: Run Current File Tests"
+			],
+			[
+				"anaconda ru",
+				"Anaconda: Run Current File Tests"
+			],
+			[
+				"anaconda pyth",
+				"Anaconda: Set Python interpreter"
+			],
+			[
+				"anaconda test",
+				"Anaconda: Run Current File Tests"
+			],
+			[
+				"anac",
+				"Anaconda: Run Current Test"
+			],
+			[
+				"anaconda",
+				"Anaconda: Goto Python object"
+			],
+			[
+				"run te",
+				"Anaconda: Run Current File Tests"
+			],
+			[
+				"anaconda ",
+				"Anaconda: Run Current Test"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"materia",
+				"Activate Materialize Theme"
+			],
+			[
+				"col",
+				"UI: Select Color Scheme"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"to",
+				"Toggle Colorcode on this view"
+			],
+			[
+				"togl",
+				"Toggle Colorcode on this view"
+			],
+			[
+				"tog",
+				"Toggle Colorcode on this view"
+			],
+			[
+				"togle",
+				"Toggle Colorcode on this view"
+			],
+			[
+				"colorcode",
+				"Toggle Colorcode on this view"
+			],
+			[
+				"toggle",
+				"Toggle Colorcode on this view"
+			],
+			[
+				"ui ",
+				"UI: Select Theme"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"syntax",
+				"Set Syntax: Python3"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"mono",
+				"Monokai Pro: select theme"
+			],
+			[
+				"colorsc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color code",
+				"Toggle Colorcode on this view"
+			],
+			[
+				"syntax pyh",
+				"Set Syntax: Python3"
+			],
+			[
+				"package remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"syntax python",
+				"Set Syntax: Python3"
+			],
+			[
+				"syntax pythn",
+				"Set Syntax: Python"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"syntax pyth",
+				"Set Syntax: Python3"
+			],
+			[
+				"syntax pytho",
+				"Set Syntax: Python (Colorcode)"
+			],
+			[
+				"pythn",
+				"Set Syntax: Python (Colorcode)"
+			],
+			[
+				"python",
+				"Set Syntax: Python (Colorcode)"
+			],
+			[
+				"syntax py",
+				"Set Syntax: Python (Colorcode)"
+			],
+			[
+				"packa in",
+				"Package Control: Install Package"
+			],
+			[
+				"color sch",
+				"UI: Select Color Scheme"
+			],
+			[
+				"disa le",
+				"Package Control: Disable Package"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"brackets",
+				"RainbowBrackets: clear rainbow"
+			],
+			[
+				"set sy pt",
+				"Set Syntax: Python (Colorcode)"
+			],
+			[
+				"toggle color",
+				"Toggle Colorcode on this view"
+			],
+			[
+				"colorco",
+				"Set Syntax: Python (Colorcode)"
+			],
+			[
+				"syntax pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"colors",
+				"UI: Select Color Scheme"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Tweak Colorcode on current color",
+				"Tweak Colorcode to current color scheme"
+			],
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 292.0,
+		"history":
+		[
+			"colorcoder_inspect_scope"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/karl/dev/resume"
+	],
+	"file_history":
+	[
+		"/Users/karl/notes/Obsidian/arduino",
+		"/Users/karl/keyboard-shortcuts.md",
+		"/Users/karl/dev/resume_redirect/notion_craft1.js",
+		"/Users/karl/dev/resume_redirect/notion_craft.js",
+		"/Users/karl/dev/resume/craft-curl.html",
+		"/Users/karl/dev/gios/clioninstall/clion-202.5428.21/plugins/python-ce/helpers/pydev/_pydevd_bundle/pydevd_kill_all_pydevd_threads.py",
+		"/Users/karl/dev/hackerrank/queuetextcase6.txt",
+		"/Users/karl/dev/hackerrank/queuetextcase6_1.txt",
+		"/Users/karl/bitbar_plugins/data/counter.dat",
+		"/Users/karl/dev/resume/LaTeX-Examples/awesome-cv.cls",
+		"/Users/karl/dev/resume/LaTeX-Examples/no-op resume.pdf",
+		"/Users/karl/Downloads/deedy_resume.pdf",
+		"/Users/karl/dev/resume/LaTeX-Examples/cl-let9b.pdf",
+		"/Users/karl/Library/Application Support/Sublime Text 3/Packages/LaTeXTools/Default (OSX).sublime-keymap",
+		"/Users/karl/dev/resume/cv.cls",
+		"/Users/karl/dev/resume/LaTeX-Examples/resume.tex",
+		"/Users/karl/Documents/Resume/LaTeX/sample-resume.tex",
+		"/Users/karl/.keyboard/hammerspoon/hyper-apps.lua",
+		"/Users/karl/Documents/OMSCS & KSU/ML4T/Exam 2/udacity-quizzes.md",
+		"/Users/karl/dev/out.txt",
+		"/Users/karl/.keyboard/hammerspoon/init.lua",
+		"/Users/karl/.hammerspoon/init.lua",
+		"/Users/karl/.keyboard/hammerspoon/control-escape.lua",
+		"/System/Library/CoreServices/Dock.app/Contents/Resources/en.lproj/InfoPlist.strings",
+		"/Users/karl/Documents/OMSCS & KSU/ML4T/Exam 2/test-anki.md",
+		"/Users/karl/Documents/OMSCS & KSU/ML4T/Exam 2/ParticipationQs_PDF_to_Markdown_8A.md",
+		"/Users/karl/Documents/OMSCS & KSU/ML4T/Exam 2/ParticipationQs_PDF_to_Markdown_8B.md",
+		"/Users/karl/Documents/OMSCS & KSU/ML4T/Exam 2/ParticipationQs_PDF_to_Markdown_8C.md",
+		"/Users/karl/dev/ml4t/pythonrc.py",
+		"/Users/karl/Library/Application Support/Sublime Text 3/Packages/Hound/Hound.sublime-settings",
+		"/Users/karl/dev/reference/LearnJava-Reference.java",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart.txt.tsl",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/textmodifier/eclipse-java-google-style.xml",
+		"/usr/local/Caskroom/miniconda/base/lib/python3.8/site-packages/conda.pth",
+		"/Users/karl/dev/ml4t/strategy_evaluation/Project-8-FAQ_Piazza.md",
+		"/Users/karl/dev/ml4t/strategy_evaluation/Project-8-FAQ_Piazza",
+		"/Users/karl/dev/ml4t/strategy_evaluation/README.txt",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart.txt",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/util_catpart_junit.txt",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/util_shared.py",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/textmodifier/test/edu/gatech/seclass/textmodifier/MyMainTest.java",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/textmodifier/test/edu/gatech/seclass/textmodifier/MainTest.java",
+		"/var/folders/jm/024pq8sd7jvc4v__3_ky275m0000gn/T/junit13469555375048675243/junit13792571013913150582.tmp",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/Individual-Project-Textmodifier.md",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/util_shared_output.txt",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart_example.txt.tsl",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart3.txt",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart3.txt.tsl",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart3a.txt.tsl",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart3.txt.tslnumber of options",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart2.txt.tslNum of Opts Input",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart-alt2.txt.tsl",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart4.txt.tslOpts Tested",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart4.txt.tslFilename Length",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart4.txt",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart-alt3.txt",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart-alt2.txt",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart4.txt.tslOpts Provided",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart-alt.txt.tsl",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/catpart-alt3.txt.tsl",
+		"/Users/karl/Library/Application Support/Sublime Text 3/Packages/User/Plain Text Color.sublime-syntax",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/cp-example.txt",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/IndividualProject/TSLgenerator-manual.md",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/TSLgenerator-manual.txt",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/TSLgenerator-manual.md",
+		"/Users/karl/dev/sdp/6300Fall20knorthrup3/cp-example.txt",
+		"/Users/karl/Desktop/bitbar.md",
+		"/Users/karl/Downloads/strategy_evaluation/StrategyLearner.py",
+		"/Users/karl/Documents/OMSCS & KSU/ML4T/cs-movavg.csv",
+		"/Users/karl/dev/ml4t/Untitled.code-workspace",
+		"/Users/karl/dev/ml4t/ml4t.code-workspace",
+		"/Users/karl/Library/Application Support/Sublime Text 3/Packages/User/copy Anaconda.sublime-settings",
+		"/Users/karl/dev/ml4t/defeat_learners/grade_best4.py",
+		"/Users/karl/dev/ml4t/marketsim/marketsim.py",
+		"/Users/karl/dev/ml4t/grading/grading.py",
+		"/Users/karl/dev/ml4t/indicator_evaluation/testproject.py",
+		"/Users/karl/dev/ml4t/indicator_evaluation/indicators.py",
+		"/Users/karl/Documents/OMSCS & KSU/ML4T/indicatornotrs.md",
+		"/Users/karl/dev/ml4t/util.py",
+		"/Users/karl/dev/ml4t/untitled.sublime-project",
+		"/Users/karl/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/karl/dev/ml4t/marketsim/grade_marketsim.py",
+		"/Users/karl/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/Users/karl/Library/Application Support/Sublime Text 3/Packages/User/colorcoder.sublime-settings",
+		"/Users/karl/Library/Application Support/Sublime Text 3/Packages/Colorcoder/colorcoder.sublime-settings",
+		"/Users/karl/dev/sdp/6300Fall20Team054/GroupProject/JobCompare6300/app/src/main/java/edu/gatech/seclass/jobcompare6300/MainActivity.java",
+		"/Users/karl/Library/Application Support/Sublime Text 3/Packages/Colorcoder/Dracula (Colorcoded).tmTheme",
+		"/Users/karl/Library/Application Support/Sublime Text 3/Installed Packages/Python_temp/Python.sublime-syntax",
+		"/Users/karl/Library/Application Support/Sublime Text 3/Installed Packages/Dracula Color Scheme/Dracula.tmTheme",
+		"/Users/karl/Library/Application Support/Sublime Text 3/Packages/Colorcoder/One Dark (Colorcoded).tmTheme",
+		"/Users/karl/Library/Application Support/Sublime Text 3/Packages/Anaconda/PythonConsole.hidden-tmTheme",
+		"/Users/karl/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/karl/dev/ml4t/untitled.py",
+		"/Users/karl/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 122.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"notion",
+			"dis",
+			"com",
+			"notion",
+			"craft",
+			"notion",
+			".so",
+			"so",
+			"notion",
+			"Use",
+			"the",
+			"word",
+			"iTerm2",
+			"Use"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "resume.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								100,
+								100
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										103,
+										104
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										0,
+										1
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.Terminus":
+	{
+		"height": 64.0
+	},
+	"output.exec":
+	{
+		"height": 364.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 272.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "resume.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/dev/resume/resume.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 289.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
