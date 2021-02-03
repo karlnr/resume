@@ -48,10 +48,19 @@
 	"buffers":
 	[
 		{
-			"file": "resume.sublime-project",
+			"file": "right_side_content/projects_SoftwareDevelopment.tex",
 			"settings":
 			{
-				"buffer_size": 105,
+				"buffer_size": 1530,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/karl/Documents/OMSCS & KSU/SAD2021/CS6310_Lectures/P2L4_Design_Studies/my.txt",
+			"settings":
+			{
+				"buffer_size": 519,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -545,10 +554,34 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/karl/dev/resume"
+		"/Users/karl/dev/resume",
+		"/Users/karl/dev/resume/heading_content",
+		"/Users/karl/dev/resume/left_side_content",
+		"/Users/karl/dev/resume/right_side_content"
 	],
 	"file_history":
 	[
+		"/Users/karl/dev/resume/rightside.tex",
+		"/Users/karl/dev/resume/right_side_content/projects_SoftwareDevelopment.tex",
+		"/Users/karl/dev/resume/left_side_content/experience.tex",
+		"/Users/karl/dev/resume/right_side_content/projects_ChemEngineering.tex",
+		"/Users/karl/dev/resume/right_side_content/summary.tex",
+		"/Users/karl/dev/resume/left_side_content/education.tex",
+		"/Users/karl/dev/resume/leftside.tex",
+		"/Users/karl/dev/resume/heading_content/banner.tex",
+		"/Users/karl/dev/resume/right_side_content/projects_DatabaseApplications.tex",
+		"/Users/karl/dev/resume/heading.tex",
+		"/Users/karl/dev/resume/left_side_sections/education.tex",
+		"/Users/karl/dev/resume/heading_section/banner.tex",
+		"/Users/karl/dev/resume/leftside_content.tex",
+		"/Users/karl/dev/resume/left_side_sections/experience.tex",
+		"/Users/karl/dev/resume/left_side_sections/coursework.tex",
+		"/Users/karl/dev/resume/sections/projects_ChemEngineering.tex",
+		"/Users/karl/dev/resume/sections/projects_SoftwareDevelopment.tex",
+		"/Users/karl/dev/resume/sections/projects_DatabaseApplications.tex",
+		"/Users/karl/dev/resume/sections/summary.tex",
+		"/Users/karl/dev/resume/resume.sublime-project",
+		"/Users/karl/dev/resume/resume.fdb_latexmk",
 		"/Users/karl/notes/Obsidian/arduino",
 		"/Users/karl/keyboard-shortcuts.md",
 		"/Users/karl/dev/resume_redirect/notion_craft1.js",
@@ -660,6 +693,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"to",
+			".",
+			"to",
+			"UML",
+			"pricing",
+			"similutor",
+			"Python",
+			"separator",
+			"sections",
+			"engineering",
+			"ngineering",
 			"notion",
 			"dis",
 			"com",
@@ -691,24 +735,36 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "resume.sublime-project",
-					"semi_transient": false,
+					"file": "right_side_content/projects_SoftwareDevelopment.tex",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 105,
+						"buffer_size": 1530,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								100,
-								100
+								865,
+								867
+							],
+							[
+								1053,
+								1055
+							],
+							[
+								1076,
+								1078
+							],
+							[
+								1173,
+								1175
 							]
 						],
 						"settings":
@@ -720,13 +776,43 @@
 								{
 									"1":
 									[
-										103,
-										104
+										906,
+										907
+									],
+									"2":
+									[
+										1106,
+										1107
+									],
+									"3":
+									[
+										1106,
+										1107
+									],
+									"4":
+									[
+										1225,
+										1226
 									]
 								},
 								"icon":
 								{
 									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									],
+									"2":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									],
+									"3":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									],
+									"4":
 									[
 										"Packages/BracketHighlighter/icons/curly_bracket.png",
 										"region.purplish"
@@ -736,8 +822,23 @@
 								{
 									"1":
 									[
-										0,
-										1
+										829,
+										830
+									],
+									"2":
+									[
+										1019,
+										1020
+									],
+									"3":
+									[
+										1019,
+										1020
+									],
+									"4":
+									[
+										1108,
+										1109
 									]
 								},
 								"unmatched":
@@ -746,6 +847,31 @@
 							},
 							"bracket_highlighter.regions":
 							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
@@ -756,55 +882,134 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/karl/Documents/OMSCS & KSU/SAD2021/CS6310_Lectures/P2L4_Design_Studies/my.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 519,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								519,
+								519
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_double_quote_content"
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
 							"colorcode": true,
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax"
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/User/Plain Text Color.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
