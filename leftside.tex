@@ -14,12 +14,12 @@
 %       Left Side Section Commands                                               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% hspace in gcal & school tcolorbox 
-\newcommand{\gcal}{%
-  {\small\textcolor{ltgray}\faCalendar\par}
+% hspace in marginsym & school tcolorbox 
+\newcommand{\marginsym}[1]{%
+  {\normalsize\textcolor{ltgray}{#1}\par}
 }
 %
-\newcommand{\gcalmargin}[1]{%
+\newcommand{\margintable}[1]{%
   \begin{tcolorbox}[
   enhanced,
   colframe=white, 
@@ -35,28 +35,61 @@
   \end{tcolorbox}
 }
 %
+\newcommand{\profmargin}[1]{%
+  \begin{tcolorbox}[
+  enhanced,
+  colframe=white, 
+  colback=white,
+  halign=right, 
+  boxrule=0em, 
+  boxsep=0em,
+  left=0em,top=0.0em,
+  bottom=0.0pt,
+  right=-17pt,
+  ]
+  {#1}
+  \end{tcolorbox}
+}
+%
 \newcommand{\school}[4]{%
+  {\small
   \setlength\tabcolsep{3pt}
-  \gcalmargin{%
+  \margintable{%
   \begin{tabular}{rl}
   {\bf#1} & \ \\
   {#2} & \ \\
-  {#3} & \gcal \\
+  {#3} & \marginsym{\faCalendar} \\
   {#4} & \ 
   \end{tabular}
+  }
   }
 }
 %
 \newcommand{\position}[3]{%
-  \gcalmargin{%
+  {\small
+  \setlength\tabcolsep{3pt}
+  \margintable{%
   \begin{tabular}{rl}
   {\bf#1} & \ \\
-  {#2} & \gcal \\
+  {#2} & \marginsym{\faCalendar} \\
   {#3} & \ 
   \end{tabular}
   }
+  }
 }
 %
+\newcommand{\profiles}[3]{%
+  {\normalsize\setstretch{1.5}
+  \setlength\tabcolsep{3pt}
+  \profmargin{%
+  \begin{tabular}{rl}
+  {\bf#1} & \marginsym{\faChrome} \\
+  {\bf#2} & \marginsym{\faGithub} \\
+  {\bf#3} & \marginsym{\faLinkedin} \\
+  \end{tabular}
+  }
+  }
+}
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -13,58 +13,75 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \newcommand{\lstindent}{15pt}  %% for description bullets
+% \newcommand{\setstretch}{0}
+% \newcommand{\itemSpace}{}
 %
 \newcommand{\justifiedsubsection}[2]{%
-  \noindent\setstretch{0}%
+  \noindent%\setstretch{0}%
   \makebox[0pt][l]{\bf#1}%
   \makebox[\textwidth][c]{}%
   \makebox[0pt][r]{\bf#2}%
 }
 %
 \newcommand{\workitemsFour}[4]{%
-  \setstretch{0}
+  {\small
+  % \setstretch{0}
   \begin{itemize}[leftmargin=\lstindent]
-    \itemsep0em 
+    % \itemsep=\itemSpace
     \item #1
     \item #2
     \item #3
     \item #4
   \end{itemize}
+  % \vspace{0.1em}
+  }
 }
 %
 \newcommand{\workitemsThree}[3]{%
-  \setstretch{0}
+  {\small
+  % \setstretch{0}
   \begin{itemize}[leftmargin=\lstindent]
-    \itemsep0em 
+    % \itemsep5em 
     \item #1
     \item #2
     \item #3
   \end{itemize}
+  % \vspace{0.1em}
+  }
 }
 %
 \newcommand{\workitemsTwo}[2]{%
-  \setstretch{0}
+  {\small
+  % \setstretch{0}
   \begin{itemize}[leftmargin=\lstindent]
-    \itemsep0em 
+    % \itemsep5em 
     \item #1
     \item #2
   \end{itemize}
+  % \vspace{0.1em}
+  }
 }
 %
 \newcommand{\workitemsOne}[1]{%
-  \setstretch{0}
+  {\small
+  % \setstretch{0}
   \begin{itemize}[leftmargin=\lstindent]
-    \itemsep0em 
+    % \itemsep5em 
     \item #1
   \end{itemize}
+  % \vspace{0.1em}
+  }
 }
 %
 \newcommand{\summary}[1]{%
+  {\small
   \section{Summary}
   \noindent{#1}
+  }
 }
 \newcommand{\statementSpace}{%
-\vspace{0.25em}\\
+  \vspace{0.3em}%
+  \\
 }
 %
 %
@@ -92,7 +109,9 @@
 %       Projects                                                                 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
+  \vspace{.5em}%
 \section{Projects}%
+  \vspace{-0.3em}%
 %
 \subsection{Chemical Engineering | Highlights}
 %
