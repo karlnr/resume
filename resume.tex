@@ -10,6 +10,9 @@
 \usepackage{ragged2e}
 \usepackage[normalem]{ulem}
 \usepackage{enumitem}  % customize list indent 
+\usepackage{hyperref}
+
+
 \RequirePackage{titlesec}
 \pagestyle{empty}  % no footer
 
@@ -38,6 +41,11 @@
 \definecolor{link}{HTML}{5c6e91}
 
 
+\hypersetup{
+    colorlinks=true,
+    % linkcolor={HTML}{5c6e91},      
+    urlcolor=link,
+}
 
 
 \newcommand{\sharedsec}{%
