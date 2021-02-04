@@ -19,6 +19,7 @@
 %
 %
 \setlength\parindent{0pt}
+  \renewcommand{\arraystretch}{1.1}%
 %
 %
 %
@@ -65,6 +66,7 @@
 %
 \newcommand{\school}[4]{%
   {\small
+  % \setstretch{1}
   \setlength\tabcolsep{3pt}
   \margintable{%
   \begin{tabular}{rl}
@@ -79,6 +81,7 @@
 %
 \newcommand{\position}[3]{%
   {\small
+  % \setstretch{1}
   \setlength\tabcolsep{3pt}
   \margintable{%
   \begin{tabular}{rl}
@@ -91,7 +94,8 @@
 }
 %
 \newcommand{\profiles}[3]{%
-  {\normalsize\setstretch{1.5}
+  {\normalsize
+  % \setstretch{1.5}
   \setlength\tabcolsep{3pt}
   \profmargin{%
   \begin{tabular}{rl}
