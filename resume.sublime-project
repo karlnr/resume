@@ -23,6 +23,7 @@
 
 	"settings": 
 		{
-	      "TEXroot": "resume.tex"
+	      "TEXroot": "resume.tex",
+          "output_directory": "./output",
 	  	}
 }
