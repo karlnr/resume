@@ -6,6 +6,9 @@
 *.fdb_latexmk
 *.fls
 *.log
-*mine*
+*mine.tex
 misc/
 output/
+snippets/
+snippets.md
+details.txt
